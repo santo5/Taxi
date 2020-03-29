@@ -90,7 +90,7 @@ namespace Taxi.Web.Data
                             Qualification = 4.5f,
                             Source = "ITM Fraternidad",
                             Target = "ITM Robledo",
-                            Remarks = "Muy buen servicio",
+                            Remarks = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in tortor egestas, consequat ante a, sagittis ex. Phasellus ac efficitur turpis, sit amet facilisis nunc. Ut feugiat velit enim, vitae lacinia dolor tempor in. Quisque placerat efficitur augue, id accumsan nisl dictum in. Vestibulum consequat molestie tortor sit amet suscipit. Donec ut dictum orci. Donec vitae nisl ac nulla egestas ullamcorper finibus ac nibh. Cras vitae purus sed elit iaculis fringilla vel vel purus. Sed faucibus ligula magna, id auctor eros dapibus eu. Sed rhoncus justo vel lacinia vestibulum. Donec massa erat, aliquet nec tempor at, pharetra a nunc.",
                             User = user1
                         },
                         new TripEntity
@@ -100,7 +100,7 @@ namespace Taxi.Web.Data
                             Qualification = 4.8f,
                             Source = "ITM Robledo",
                             Target = "ITM Fraternidad",
-                            Remarks = "Conductor muy amable",
+                            Remarks = "Nam tempus, orci in pretium tincidunt, tellus ipsum fringilla urna, nec vestibulum magna enim quis magna. Sed ultrices ac ligula quis tempor. Curabitur convallis lacus pretium malesuada maximus. Phasellus imperdiet enim eget molestie egestas. Donec quis eros enim. Mauris accumsan velit risus, nec ornare lacus sollicitudin non. Curabitur ipsum nibh, cursus nec purus in, faucibus rutrum leo. Cras mattis sit amet turpis et porta. Vestibulum dignissim magna eget ipsum pellentesque, pulvinar efficitur felis tristique. Duis diam elit, malesuada rutrum congue sit amet, fringilla vel eros. Aenean euismod velit augue, vitae imperdiet felis bibendum ut. Ut eu sem metus. Proin hendrerit blandit nisl, vitae feugiat ante luctus id. Ut at augue sed nulla scelerisque fringilla.",
                             User = user1
                         }
                     }
