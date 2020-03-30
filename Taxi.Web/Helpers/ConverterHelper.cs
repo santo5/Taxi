@@ -37,7 +37,7 @@ namespace Taxi.Web.Helpers
                 User = ToUserResponse(taxiEntity.User)
             };
         }
-        private UserResponse ToUserResponse(UserEntity user)
+        public UserResponse ToUserResponse(UserEntity user)
         {
             if (user == null)
             {
