@@ -117,5 +117,18 @@ namespace Taxi.Prism.Helpers
 
         public static string Ok => Resource.Ok;
 
+        public static string PictureSource => Resource.PictureSource;
+
+        public static string Cancel => Resource.Cancel;
+
+        public static string FromCamera => Resource.FromCamera;
+
+        public static string FromGallery => Resource.FromGallery;
+
+        public static string PasswordRecover => Resource.PasswordRecover;
+
+        public static string ForgotPassword => Resource.ForgotPassword;
+
+
     }
 }
