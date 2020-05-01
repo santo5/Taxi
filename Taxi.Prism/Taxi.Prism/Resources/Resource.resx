@@ -354,4 +354,55 @@
   <data name="ConfirmAddress" xml:space="preserve">
     <value>Confirm your address</value>
   </data>
+  <data name="GenericComment" xml:space="preserve">
+    <value>Generic comment</value>
+  </data>
+  <data name="CommnetPlaceHolder" xml:space="preserve">
+    <value>Select a comment....</value>
+  </data>
+  <data name="Comment1" xml:space="preserve">
+    <value>Very good service</value>
+  </data>
+  <data name="Comment2" xml:space="preserve">
+    <value>Very friendly driver</value>
+  </data>
+  <data name="Comment3" xml:space="preserve">
+    <value>Clean taxi</value>
+  </data>
+  <data name="Comment4" xml:space="preserve">
+    <value>Dirty or spoiled taxi</value>
+  </data>
+  <data name="Comment5" xml:space="preserve">
+    <value>Bad driver</value>
+  </data>
+  <data name="Comment6" xml:space="preserve">
+    <value>Charge higher than expected</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="DistanceTraveled" xml:space="preserve">
+    <value>Distance traveled</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="ApproximateValue" xml:space="preserve">
+    <value>Approximate value</value>
+  </data>
+  <data name="QualificationError" xml:space="preserve">
+    <value>I don't know what error is</value>
+  </data>
+  <data name="CancelTripConfirm" xml:space="preserve">
+    <value>cancel the trip</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Trip canceled</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
 </root>

@@ -106,11 +106,29 @@ namespace Taxi.Prism.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Approximate value.
+        /// </summary>
+        public static string ApproximateValue {
+            get {
+                return ResourceManager.GetString("ApproximateValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Cancel.
         /// </summary>
         public static string Cancel {
             get {
                 return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a cancel the trip.
+        /// </summary>
+        public static string CancelTripConfirm {
+            get {
+                return ResourceManager.GetString("CancelTripConfirm", resourceCulture);
             }
         }
         
@@ -133,11 +151,92 @@ namespace Taxi.Prism.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Comment.
+        /// </summary>
+        public static string Comment {
+            get {
+                return ResourceManager.GetString("Comment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Very good service.
+        /// </summary>
+        public static string Comment1 {
+            get {
+                return ResourceManager.GetString("Comment1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Very friendly driver.
+        /// </summary>
+        public static string Comment2 {
+            get {
+                return ResourceManager.GetString("Comment2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Clean taxi.
+        /// </summary>
+        public static string Comment3 {
+            get {
+                return ResourceManager.GetString("Comment3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Dirty or spoiled taxi.
+        /// </summary>
+        public static string Comment4 {
+            get {
+                return ResourceManager.GetString("Comment4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Bad driver.
+        /// </summary>
+        public static string Comment5 {
+            get {
+                return ResourceManager.GetString("Comment5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Charge higher than expected.
+        /// </summary>
+        public static string Comment6 {
+            get {
+                return ResourceManager.GetString("Comment6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Select a comment.....
+        /// </summary>
+        public static string CommnetPlaceHolder {
+            get {
+                return ResourceManager.GetString("CommnetPlaceHolder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Confirm your address.
         /// </summary>
         public static string ConfirmAddress {
             get {
                 return ResourceManager.GetString("ConfirmAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Trip canceled.
+        /// </summary>
+        public static string Confirmation {
+            get {
+                return ResourceManager.GetString("Confirmation", resourceCulture);
             }
         }
         
@@ -210,6 +309,15 @@ namespace Taxi.Prism.Resources {
         public static string CurrentPasswordPlaceHolder {
             get {
                 return ResourceManager.GetString("CurrentPasswordPlaceHolder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Distance traveled.
+        /// </summary>
+        public static string DistanceTraveled {
+            get {
+                return ResourceManager.GetString("DistanceTraveled", resourceCulture);
             }
         }
         
@@ -349,6 +457,15 @@ namespace Taxi.Prism.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Generic comment.
+        /// </summary>
+        public static string GenericComment {
+            get {
+                return ResourceManager.GetString("GenericComment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a It was not possible to get your current address, please try later.
         /// </summary>
         public static string GeolocationError {
@@ -462,6 +579,15 @@ namespace Taxi.Prism.Resources {
         public static string NewTrip {
             get {
                 return ResourceManager.GetString("NewTrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No.
+        /// </summary>
+        public static string No {
+            get {
+                return ResourceManager.GetString("No", resourceCulture);
             }
         }
         
@@ -637,6 +763,15 @@ namespace Taxi.Prism.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a I don&apos;t know what error is.
+        /// </summary>
+        public static string QualificationError {
+            get {
+                return ResourceManager.GetString("QualificationError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Register.
         /// </summary>
         public static string Register {
@@ -754,6 +889,15 @@ namespace Taxi.Prism.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Time.
+        /// </summary>
+        public static string Time {
+            get {
+                return ResourceManager.GetString("Time", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a User.
         /// </summary>
         public static string User {
@@ -768,6 +912,15 @@ namespace Taxi.Prism.Resources {
         public static string UserUpdated {
             get {
                 return ResourceManager.GetString("UserUpdated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Yes.
+        /// </summary>
+        public static string Yes {
+            get {
+                return ResourceManager.GetString("Yes", resourceCulture);
             }
         }
     }

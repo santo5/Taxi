@@ -82,6 +82,7 @@ namespace Taxi.Web
             services.AddTransient<SeedDb>();
             services.AddScoped<ICombosHelper, CombosHelper>();
             services.AddScoped<IImageHelper, ImageHelper>();
+            services.AddScoped<IBlobHelper, BlobHelper>();
             services.AddScoped<IMailHelper, MailHelper>();
 
 

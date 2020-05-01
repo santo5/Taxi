@@ -1,4 +1,5 @@
-﻿using Taxi.Common.Enums;
+﻿using System.ComponentModel.DataAnnotations;
+using Taxi.Common.Enums;
 
 namespace Taxi.Common.Models
 {
@@ -27,8 +28,8 @@ namespace Taxi.Common.Models
         public string FullNameWithDocument => $"{FirstName} {LastName} - {Document}";
 
         public string PictureFullPath => string.IsNullOrEmpty(PicturePath)
-    ? "https://taxiw.azurewebsites.net//images/noimage.png"
-    : $"https://taxiw.azurewebsites.net{PicturePath.Substring(1)}";
+        ? "https://taxiw.azurewebsites.net//images/noimage.png"
+        : $"https://blogtaxi.blob.core.windows.net/users/{PicturePath}";
 
     }
 }

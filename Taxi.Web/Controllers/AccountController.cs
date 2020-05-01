@@ -14,6 +14,7 @@ using Taxi.Web.Data;
 using Microsoft.EntityFrameworkCore;
 using Taxi.Common.Enums;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Taxi.Web.Controllers
 {
@@ -26,13 +27,15 @@ namespace Taxi.Web.Controllers
         private readonly IConfiguration _configuration;
         private readonly IMailHelper _mailHelper;
         private readonly DataContext _context;
+        private readonly IBlobHelper _blobHelper;
 
         public AccountController(IUserHelper userHelper,
             IImageHelper imageHelper,
             ICombosHelper combosHelper,
             IConfiguration configuration,
             IMailHelper mailHelper,
-            DataContext context
+            DataContext context,
+            IBlobHelper blobHelper
 )
         {
             _userHelper = userHelper;
@@ -41,7 +44,20 @@ namespace Taxi.Web.Controllers
             _configuration = configuration;
             _mailHelper = mailHelper;
             _context = context;
+            _blobHelper = blobHelper;
         }
+
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Users
+                .Include(u => u.Trips)
+                .Where(u => u.UserType == UserType.User)
+                .OrderBy(u => u.FirstName)
+                .ThenBy(u => u.LastName)
+                .ToListAsync());
+        }
+
         public async Task<IActionResult> ConfirmUserGroup(int requestId, string token)
         {
             if (requestId == 0 || string.IsNullOrEmpty(token))
@@ -186,7 +202,7 @@ namespace Taxi.Web.Controllers
 
                 if (model.PictureFile != null)
                 {
-                    path = await _imageHelper.UploadImageAsync(model.PictureFile, "Users");
+                    path = await _blobHelper.UploadBlobAsync(model.PictureFile, "users");
                 }
 
                 UserEntity user = await _userHelper.GetUserAsync(User.Identity.Name);
@@ -225,7 +241,7 @@ namespace Taxi.Web.Controllers
 
                 if (model.PictureFile != null)
                 {
-                    path = await _imageHelper.UploadImageAsync(model.PictureFile, "Users");
+                    path = await _blobHelper.UploadBlobAsync(model.PictureFile, "users");
                 }
 
                 UserEntity user = await _userHelper.AddUserAsync(model, path);

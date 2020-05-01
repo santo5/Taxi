@@ -33,6 +33,13 @@ namespace Taxi.Web.Models
         public IFormFile PictureFile { get; set; }
 
         [Display(Name = "Picture")]
+        public string PictureFullPath => string.IsNullOrEmpty(PicturePath)
+           ? "https://taxiw.azurewebsites.net//images/noimage.png"
+           : $"https://blogtaxi.blob.core.windows.net/users/{PicturePath}";
+
+        [Display(Name = "Picture")]
         public string PicturePath { get; set; }
+
+       
     }
 }
