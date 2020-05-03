@@ -45,6 +45,8 @@ namespace Taxi.Prism.Helpers
 
         public static string StartDate => Resource.StartDate;
 
+        public static string EndDate => Resource.EndDate;
+
         public static string Score => Resource.Score;
 
         public static string Remarks => Resource.Remarks;
@@ -196,6 +198,10 @@ namespace Taxi.Prism.Helpers
         public static string Yes => Resource.Yes;
 
         public static string No => Resource.No;
+
+        public static string MyTrip => Resource.MyTrip;
+
+        public static string MyTrips => Resource.MyTrips;
 
     }
 }
